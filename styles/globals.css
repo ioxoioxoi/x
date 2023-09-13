@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+.MuiButton-contained, 
+.MuiFab-circular {
+  /* -webkit-appearance: button; */
+  background-color: rgb(14, 172, 64);
+  background-image: none;
+}
+
+.main {
+  position: absolute !important;
+  margin: 60px 10px 10px 240px !important;
+  width: calc(100% - 250px);
+}
+
+.main2 {
+  position: absolute !important;
+  margin: 60px 10px 10px 10px !important;
+  width: 99%;
+}
+
+.main3 {
+  position: absolute !important;
+  margin: 60px 10px 10px 10px !important;
+  width: 100%;
+}
+
+.MuiDrawer-paper {
+  background-color: #0EAC40 !important;
+  color: #D1D9E2 !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.menu-item {
+  color : #111111;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+}
+
+.menu-flags {
+  float: right;
+  margin-right: 10px;
+  margin-top: -30px;
+  height: 31px;
+}
+
+.menu-flags #rfs-btn{
+  height: 31px;
+}
+
+.MuiDataGrid-columnHeaderTitle {
+  font-weight: bold !important;
+}
+
+.css-cveggr-MuiListItemIcon-root {
+  min-width: 30px !important;
+}
+
+.Mui-expanded{
+  -webkit-transform: rotate(0deg) !important;
+  -moz-transform: rotate(0deg) !important;
+  -ms-transform: rotate(0deg) !important;
+  transform: rotate(0deg) !important;
+}
